@@ -14,8 +14,27 @@ ul{
     list-style: none;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-left: 0px;
 }
 
+img {
+    display: block;
+}
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+
+ button {
+    cursor: pointer;
+ }
 
 /* ====================COMPONENTS==================== */
 
@@ -70,22 +89,30 @@ ul{
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
-    cursor: pointer;
     border: transparent;
     text-align: center;
     min-width:216px;
     height: 50px;
-    margin-bottom: 200px;
+    
    
 }
    .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
-   }
+}
+
+
+
+
+   .section {
+   padding-top: 94px;
+   padding-bottom: 94px;
+        
+}
+
 /* ====================HEADER==================== */
 
 .logo-header{
@@ -121,7 +148,7 @@ ul{
 }
 
 .contact-nav:hover,
-.-nav:focus {
+.nav:focus {
 color:var(--accent-color);
 }
 
@@ -145,12 +172,13 @@ color:var(--accent-color);
 }
 
 .main-nav {
-    display: flex;
+    display: flex;   
 }
 
 .header-list {
 display: flex;
 align-items: center;
+border-bottom: 1px solid #ECECEC;
 }
 
 
@@ -160,6 +188,7 @@ align-items: center;
     display: block;
     background-color: #2F303A;
     text-align: center;
+    height: 600px;
       
    
 }
@@ -182,14 +211,12 @@ align-items: center;
 }
 
 .hero-padding {
-    padding-top: 200px;
+    padding-top: 106px;
 }
 
 /* ====================FEATURES==================== */
 
-.fea {
-    margin-bottom: 94px;
-}
+
 .features {
     font-size: 14px;
     line-height: 1.7;
@@ -203,7 +230,7 @@ align-items: center;
     margin-top: 0px;
     margin-bottom: 0px;
     display: flex;
-    padding-left: 0px;
+
 }
 
 
@@ -216,13 +243,10 @@ align-items: center;
 }
 
 /* ====================PROJECT==================== */
-.project {
-    margin-bottom: 94px;
-}
 
 .project-list {
     display: flex;
-    padding-left: 0px;
+    
 }
 .project-list .project-list-img + .project-list-img {
     margin-left:30px;
@@ -256,15 +280,12 @@ align-items: center;
 
 .profession-list {
     display: flex;
-    padding-left: 0px;
+    
 }
 .profession-list .profession-list-card + .profession-list-card {
     margin-left:30px;
 }
 
-.profession-section {
-    margin-bottom: 94px;
-}
 
 /* ====================FOOTER==================== */
 
@@ -311,9 +332,6 @@ color:var(--accent-color);
     font-style: normal;
 }
 
-.adr-foot-list{
-    padding-left: 0px;
-}
 
 footer {
     background-color: #2F303A;
@@ -323,29 +341,25 @@ footer {
 
 /* Для портфолио */
 
-.header-porfolio {
-    margin-bottom: 94px;
-}
-
-.main-port {
-    margin-bottom: 94px;
-}
 
 .title-port {
+    width: 370px;
     color:var(--title-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     margin-top: 0px;
     margin-bottom: 4px;
-    
+            
 }
 
 .direction {
+    width: 370px;
    line-height: 1.8;
    letter-spacing: 0.03em;
    margin-top: 0px;
    margin-bottom: 0px;
+
 }
 
 .button-direction {
@@ -358,7 +372,6 @@ footer {
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-    cursor: pointer;
     border: transparent;
     text-align: center;
     min-width: 112px;
@@ -373,34 +386,31 @@ background-color: var(--accent-color);
 }
 
 
-.filtr-marg {
-    padding-top: 94px;
-}
-
-
 .list-filtr {
     display: flex;
-    padding-left: 0px;
     justify-content: center;
     margin-bottom: 50px;
-  
+    column-gap:8px;
     
 }
 
 .list-card {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0px;
+    gap:30px;
+    
 }
-.list-filtr .list-filtr-item + .list-filtr-item {
-    margin-left:8px;
-}
+
 
 .card{
-    margin-right: 30px;
-    margin-bottom: 30px;
+    width: calc((100% - 60px)/3);
+   
 }
 
-.card:nth-child(3n) {
-margin-right: 0px;
+
+.border{
+    border:1px solid #EEEEEE ;
+    border-top: 0px;
+   
 }
+
