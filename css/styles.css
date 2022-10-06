@@ -163,7 +163,7 @@ color:var(--accent-color);
 .head-list {
     display: flex;
     align-items: center;
-    padding-left: 93px;
+    margin-left: 93px;
 
 }
 
@@ -178,7 +178,13 @@ color:var(--accent-color);
 .header-list {
 display: flex;
 align-items: center;
-border-bottom: 1px solid #ECECEC;
+}
+
+
+.header-page {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #CECECE ;
 }
 
 
@@ -188,7 +194,8 @@ border-bottom: 1px solid #ECECEC;
     display: block;
     background-color: #2F303A;
     text-align: center;
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
       
    
 }
@@ -210,9 +217,6 @@ border-bottom: 1px solid #ECECEC;
     
 }
 
-.hero-padding {
-    padding-top: 106px;
-}
 
 /* ====================FEATURES==================== */
 
@@ -244,6 +248,10 @@ border-bottom: 1px solid #ECECEC;
 
 /* ====================PROJECT==================== */
 
+.project {
+    padding-top: 0px;
+}
+
 .project-list {
     display: flex;
     
@@ -259,22 +267,15 @@ border-bottom: 1px solid #ECECEC;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
-    margin-top: 0px;
-    margin-bottom: 10px;
     text-align: center;
 }
 
 .profession {
     line-height: 1.18;
     letter-spacing: 0.03em;
-    margin-top: 0px;
-    margin-bottom: 30px;
     text-align: center;
+    margin-top: 10px;
 
-}
-
-.image-prof {
-    margin-bottom: 30px;
 }
 
 
@@ -286,7 +287,14 @@ border-bottom: 1px solid #ECECEC;
     margin-left:30px;
 }
 
+.staff{
+    background-color: #F5F4FA;
+}
 
+.profession-list-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 /* ====================FOOTER==================== */
 
 .logo-footer{
@@ -333,10 +341,15 @@ color:var(--accent-color);
 }
 
 
-footer {
+.footer-page {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
+.adr-foot-list-item:not(:last-child) {
+    margin-bottom:9px;
+}
 
 
 /* Для портфолио */
@@ -348,17 +361,15 @@ footer {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 0px;
-    margin-bottom: 4px;
-            
+   
+               
 }
 
 .direction {
     width: 370px;
    line-height: 1.8;
    letter-spacing: 0.03em;
-   margin-top: 0px;
-   margin-bottom: 0px;
+  
 
 }
 
@@ -411,6 +422,7 @@ background-color: var(--accent-color);
 .border{
     border:1px solid #EEEEEE ;
     border-top: 0px;
+    padding: 20px 24px 20px 24px;
    
 }
 
